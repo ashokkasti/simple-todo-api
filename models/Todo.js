@@ -22,6 +22,11 @@ const Todo = sequelize.define('Todo', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  deadline:{
+    type: DataTypes.DATE,
+    allowNull: true
+  },
+  
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW
