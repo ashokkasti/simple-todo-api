@@ -30,7 +30,7 @@ const swaggerDocs = swaggerJsdoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // SQLite connection
-sequelize.sync()
+sequelize.sync({alter:true})
   .then(() => console.log('Connected to SQLite database'))
   .catch(err => console.error('SQLite connection error:', err));
 

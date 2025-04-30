@@ -29,6 +29,11 @@ const Todo = require('../models/Todo');
  *         completed:
  *           type: boolean
  *           description: Todo completion status
+ *         deadline:
+ *           type: string
+ *           format: date
+ *           description: Deadline for todo items
+ * 
  */
 
 /**
